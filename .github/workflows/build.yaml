@@ -1,4 +1,4 @@
-name: Deploy Nginx on GCP
+name: Deploy Nginx on GCP cloudly
 
 on:
   push:
