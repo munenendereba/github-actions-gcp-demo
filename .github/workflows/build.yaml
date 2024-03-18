@@ -24,5 +24,5 @@ jobs:
           GOOGLE_PROJECT: ${{ secrets.GOOGLE_PROJECT }}
         run: |
           gcloud auth configure-docker us-east4-docker.pkg.dev
-          docker build -t us-east4-docker.pkg.dev/$GOOGLE_PROJECT/demo/nginx:latest .
-          docker push us-east4-docker.pkg.dev/$GOOGLE_PROJECT/demo/nginx:latest
+          docker build -t us-east4-docker.pkg.dev/$GOOGLE_PROJECT/nodejs-repo/nginx:latest .
+          docker push us-east4-docker.pkg.dev/$GOOGLE_PROJECT/nodejs-repo/nginx:latest
