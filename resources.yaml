@@ -8,8 +8,8 @@ spec:
   selector:
     app: nginx
   ports:
-  - port: 80
-    targetPort: 80
+    - port: 80
+      targetPort: 80
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -28,5 +28,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: us-central1-docker.pkg.dev/GOOGLE_PROJECT/demo/nginx:latest
+        - name: nginx
+          image: us-east4-docker.pkg.dev/GOOGLE_PROJECT/nodejs-repo/nginx:latest
